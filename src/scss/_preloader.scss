@@ -1,0 +1,45 @@
+.loaded .preloader {
+  display: none;
+}
+
+.preloader {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+
+  .preloader__content {
+    font-family: "Russo One", sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+  }
+  .preloader__content svg{
+    height: 112px;
+    animation: height 3.5s infinite alternate;
+    -webkit-animation: height 3.5s infinite alternate;
+    width: 100%;
+  }
+  .preloader__content svg text {
+    text-transform: uppercase;
+    animation: stroke 3.5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365fa0;
+    font-size: 100px;
+    height: fit-content;
+  }
+}
+
+

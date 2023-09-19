@@ -1,0 +1,14 @@
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+}
