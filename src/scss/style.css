@@ -98,56 +98,6 @@ menu, ol, ul {
   --tw-backdrop-sepia: ;
 }
 
-::-webkit-backdrop {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x: ;
-  --tw-pan-y: ;
-  --tw-pinch-zoom: ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position: ;
-  --tw-gradient-via-position: ;
-  --tw-gradient-to-position: ;
-  --tw-ordinal: ;
-  --tw-slashed-zero: ;
-  --tw-numeric-figure: ;
-  --tw-numeric-spacing: ;
-  --tw-numeric-fraction: ;
-  --tw-ring-inset: ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgba(59,130,246,.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur: ;
-  --tw-brightness: ;
-  --tw-contrast: ;
-  --tw-grayscale: ;
-  --tw-hue-rotate: ;
-  --tw-invert: ;
-  --tw-saturate: ;
-  --tw-sepia: ;
-  --tw-drop-shadow: ;
-  --tw-backdrop-blur: ;
-  --tw-backdrop-brightness: ;
-  --tw-backdrop-contrast: ;
-  --tw-backdrop-grayscale: ;
-  --tw-backdrop-hue-rotate: ;
-  --tw-backdrop-invert: ;
-  --tw-backdrop-opacity: ;
-  --tw-backdrop-saturate: ;
-  --tw-backdrop-sepia: ;
-}
-
 ::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -203,30 +153,6 @@ menu, ol, ul {
   -webkit-animation: pulseText 1.5s infinite;
 }
 
-@-webkit-keyframes pulseText {
-  0% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-}
-
 @keyframes pulseText {
   0% {
     transform: scale(1);
@@ -256,48 +182,12 @@ menu, ol, ul {
   border-radius: 50%;
 }
 
-@-webkit-keyframes pulse-animation {
-  0% {
-    box-shadow: 0 0 0 0px rgba(45, 212, 191, 0.911);
-  }
-  100% {
-    box-shadow: 0 0 0 20px rgba(45, 212, 191, 0);
-  }
-}
-
 @keyframes pulse-animation {
   0% {
     box-shadow: 0 0 0 0px rgba(45, 212, 191, 0.911);
   }
   100% {
     box-shadow: 0 0 0 20px rgba(45, 212, 191, 0);
-  }
-}
-@-webkit-keyframes stroke {
-  0% {
-    fill: rgba(72, 138, 20, 0);
-    stroke: rgb(54, 95, 160);
-    stroke-dashoffset: 25%;
-    stroke-dasharray: 0 50%;
-    stroke-width: 2;
-    font-size: 100px;
-  }
-  70% {
-    fill: rgba(72, 138, 20, 0);
-    stroke: rgb(54, 95, 160);
-  }
-  80% {
-    fill: rgba(72, 138, 20, 0);
-    stroke: rgb(54, 95, 160);
-    stroke-width: 3;
-  }
-  100% {
-    fill: rgb(72, 138, 204);
-    stroke: rgba(54, 95, 160, 0);
-    stroke-dashoffset: -25%;
-    stroke-dasharray: 50% 0;
-    stroke-width: 0;
-    font-size: 130px;
   }
 }
 @keyframes stroke {
@@ -327,37 +217,12 @@ menu, ol, ul {
     font-size: 130px;
   }
 }
-@-webkit-keyframes height {
-  0% {
-    height: 112px;
-  }
-  100% {
-    height: 300px;
-  }
-}
 @keyframes height {
   0% {
     height: 112px;
   }
   100% {
     height: 300px;
-  }
-}
-@-webkit-keyframes move {
-  25% {
-    opacity: 1;
-  }
-  33% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
-  67% {
-    opacity: 1;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
 @keyframes move {
@@ -377,11 +242,6 @@ menu, ol, ul {
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
-@-webkit-keyframes pulse {
-  to {
-    opacity: 1;
-  }
-}
 @keyframes pulse {
   to {
     opacity: 1;
@@ -393,7 +253,6 @@ menu, ol, ul {
   justify-content: space-between;
   width: 50%;
   max-height: 100vh;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding-top: 6rem;
@@ -492,7 +351,6 @@ menu, ol, ul {
   display: block;
 }
 .header__nav ul {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin-top: 4rem;
@@ -825,16 +683,13 @@ section h2._active {
   height: 8px;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
-  -webkit-animation: move 3s ease-out infinite;
-          animation: move 3s ease-out infinite;
+  animation: move 3s ease-out infinite;
 }
 .welcome__chevron:first-child {
-  -webkit-animation: move 3s ease-out 1s infinite;
-          animation: move 3s ease-out 1s infinite;
+  animation: move 3s ease-out 1s infinite;
 }
 .welcome__chevron:nth-child(2) {
-  -webkit-animation: move 3s ease-out 2s infinite;
-          animation: move 3s ease-out 2s infinite;
+  animation: move 3s ease-out 2s infinite;
 }
 .welcome__chevron:before, .welcome__chevron:after {
   content: " ";
@@ -863,8 +718,7 @@ section h2._active {
   text-transform: uppercase;
   white-space: nowrap;
   opacity: 0.25;
-  -webkit-animation: pulse 2s linear alternate infinite;
-          animation: pulse 2s linear alternate infinite;
+  animation: pulse 2s linear alternate infinite;
 }
 
 #particles-js {
@@ -938,7 +792,6 @@ body.loaded #cursor-border {
   position: absolute;
   left: 60px;
   bottom: -5px;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   letter-spacing: 0.025em;
@@ -995,12 +848,10 @@ body.loaded #cursor-border {
 }
 .preloader .preloader__content svg text {
   text-transform: uppercase;
-  -webkit-animation: stroke 3.5s infinite alternate;
-          animation: stroke 3.5s infinite alternate;
+  animation: stroke 3.5s infinite alternate;
   stroke-width: 2;
   stroke: #365fa0;
   font-size: 100px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -1049,58 +900,40 @@ body.loaded #cursor-border {
 }
 
 .sound-on #Line_1 {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation: pulse 1s infinite;
+  animation-delay: 0.15s;
 }
 .sound-on #Line_2 {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation: pulse 1s infinite;
+  animation-delay: 0.3s;
 }
 .sound-on #Line_3 {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-delay: 0.45s;
-          animation-delay: 0.45s;
+  animation: pulse 1s infinite;
+  animation-delay: 0.45s;
 }
 .sound-on #Line_4 {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation: pulse 1s infinite;
+  animation-delay: 0.6s;
 }
 .sound-on #Line_5 {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
+  animation: pulse 1s infinite;
+  animation-delay: 0.75s;
 }
 .sound-on #Line_6 {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  animation: pulse 1s infinite;
+  animation-delay: 0.9s;
 }
 .sound-on #Line_7 {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-delay: 1.05s;
-          animation-delay: 1.05s;
+  animation: pulse 1s infinite;
+  animation-delay: 1.05s;
 }
 .sound-on #Line_8 {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  animation: pulse 1s infinite;
+  animation-delay: 1.2s;
 }
 .sound-on #Line_9 {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
-  -webkit-animation-delay: 1.35s;
-          animation-delay: 1.35s;
+  animation: pulse 1s infinite;
+  animation-delay: 1.35s;
 }
 @keyframes pulse {
   0% {
@@ -1133,7 +966,6 @@ body.loaded #cursor-border {
   padding-top: 0.1em;
   padding-right: 0.05em;
   padding-bottom: 0.15em;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -1284,5 +1116,4 @@ body.loaded #cursor-border {
   align-items: center;
   width: 100%;
   gap: 20px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

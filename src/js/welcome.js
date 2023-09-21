@@ -1,10 +1,9 @@
-// Step 1: Variable Declarations
+
 let showTitle1 = false;
 let showTitle2 = false;
 let showTitle3 = false;
 let isAnimating = false;
 
-// Step 2: Wrap every letter in a span
 const wrapLetters = (element) => {
   const textWrapper = element.querySelector(".letters");
   textWrapper.innerHTML = textWrapper.textContent.replace(
@@ -13,12 +12,11 @@ const wrapLetters = (element) => {
   );
 };
 
-// Step 3: Animation Setup
+
 const animateTitle = (title, index) => {
   const line = title.querySelector(".line");
   const letters = title.querySelectorAll(".letter");
 
-  // Начнем с установки opacity: 1 для каждого тайтла
   title.style.opacity = 1;
 
   return anime.timeline({ loop: false })
@@ -49,16 +47,16 @@ const animateTitle = (title, index) => {
     })
     .add({
       targets: title,
-      opacity: 0, // Скрываем текущий тайтл после завершения анимации
+      opacity: 0, 
       duration: 1000,
       easing: "easeOutExpo",
       complete: () => {
-        isAnimating = false; // Анимация завершена, разрешаем следующую анимацию
+        isAnimating = false; 
         if (index === 0) showTitle1 = true;
         if (index === 1) showTitle2 = true;
         if (index === 2) showTitle3 = true;
         
-        // В зависимости от индекса тайтла, запускаем следующую анимацию
+
         if (index === 0) {
           const title2 = document.querySelector(".title2");
           animateTitle(title2, 1);
@@ -77,10 +75,10 @@ const animateTitle = (title, index) => {
 
 
 
-// Step 4: Wheel Event Listener
+
 document.addEventListener("wheel", () => {
   if (isAnimating) {
-    return; // Prevent triggering the next animation while the previous one is still animating
+    return; 
   }
 
   if (!showTitle1) {
@@ -103,7 +101,7 @@ document.addEventListener("wheel", () => {
   }
 });
 
-// Step 5: Initialize
+
 wrapLetters(document.querySelector(".title1"));
 wrapLetters(document.querySelector(".title2"));
 wrapLetters(document.querySelector(".title3"));

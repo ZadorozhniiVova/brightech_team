@@ -96,6 +96,12 @@ let modelArraySrc = [
       "https://zadorozhniivova.github.io/brightech_team/music/zadorozhnii.mp3",
       // "./music/zadorozhnii.mp3",
   },
+  {
+    model: "model/shurah.fbx",
+    audio:
+      "https://zadorozhniivova.github.io/brightech_team/music/shurah.mp3",
+      // "./music/shurah.mp3",
+  }
 ];
 let modelNo = 1;
 let audio = new Audio(`${modelArraySrc[modelNo - 1].audio}`);
@@ -133,7 +139,7 @@ const init = () => {
   // LIGHT
   // const light = new THREE.AmbientLight(0xffffff, 1);
   // light.layers.enable(0);
-  // light.layers.enable(1);
+  // light.layers.enable(0.2);
   // scene.add(light);
 
   const dirLight = new THREE.DirectionalLight(0xffffff, 1);
@@ -536,6 +542,7 @@ selectPerson("#horodentsky", 7);
 selectPerson("#migda", 8);
 selectPerson("#shuplat", 9);
 selectPerson("#zadorozhnii", 10);
+selectPerson("#shura", 11);
 render();
 
 //MINMAX
